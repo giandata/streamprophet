@@ -129,27 +129,6 @@ if page == "Application":
                 monthly = st.checkbox("Monthly")
                 yearly = st.checkbox("Yearly")
 
-            # with st.expander("Covid modeling"):
-            #     st.write("Add covid impact?")
-
-            #     covid = st.checkbox("Covid")
-            #     primera_ola = None
-            #     segunda_ola = None
-            #     if covid:
-            #         primera_ola = pd.DataFrame({
-            #             'holiday': 'primera_ola',
-            #             'ds': pd.date_range(pd.to_datetime('2020-03-14'), periods=79).tolist(),
-            #             'lower_window': 0,
-            #             'upper_window': 0,
-            #         })
-            #         segunda_ola = pd.DataFrame({
-            #             'holiday': 'segunda_ola',
-            #             'ds': pd.date_range(pd.to_datetime('2020-08-04'), periods=280).tolist(),
-            #             'lower_window': 0,
-            #             'upper_window': 0,
-            #         })
-            #         covid_dates = primera_ola.append(segunda_ola)
-
             with st.expander("Growth model"):
                 
                 st.write('Prophet uses by default a linear growth model.')
